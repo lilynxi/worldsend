@@ -1,0 +1,36 @@
+
+@import 'variables';
+
+/* Prefooter */
+.prefooter {
+  background: #eee;
+  padding: 50px 0;
+}
+
+
+
+.prefooter-artist {
+  @media (min-width: $small){
+    width: 85%;
+    &:nth-child(2){
+      width: 100%;
+    }
+    &:nth-child(3){
+      width: 80%;
+    }
+  }
+}
+
+
+/* Footer */
+.footer-block {
+  @media (min-width: $small){
+    width: 90%;
+    &:nth-child(1){
+      width: 100%;
+    }
+    &:nth-child(2){
+      width: 80%;
+    }
+  }
+}

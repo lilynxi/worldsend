@@ -11,3 +11,90 @@
  Tags: right-sidebar, featured-images, post-formats,  sticky-post
  Text Domain:  kraft
 */
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+/* Breakpoints */
+/* Container Width */
+/* Colors */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', serif;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: underline;
+}
+
+#footer h4 {
+  color: #fff;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  #footer h4 {
+    font-size: 32px;
+  }
+}
+
+#footer a {
+  color: #fff;
+}
+
+#prefooter h4 {
+  font-size: 38px;
+}
+@media (min-width: 768px) {
+  #prefooter h4 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 992px) {
+  #prefooter h4 {
+    font-size: 60px;
+  }
+}
+
+.narrow-container, .flex-container {
+  max-width: 1040px;
+}
+
+/* Flex Container */
+.flex-container {
+  display: flex;
+  flex-flow: column;
+}
+@media (min-width: 768px) {
+  .flex-container {
+    flex-flow: row;
+  }
+}
+
+/* Prefooter */
+.prefooter {
+  background: #eee;
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .prefooter-artist {
+    width: 85%;
+  }
+  .prefooter-artist:nth-child(2) {
+    width: 100%;
+  }
+  .prefooter-artist:nth-child(3) {
+    width: 80%;
+  }
+}
+
+/* Footer */
+@media (min-width: 768px) {
+  .footer-block {
+    width: 90%;
+  }
+  .footer-block:nth-child(1) {
+    width: 100%;
+  }
+  .footer-block:nth-child(2) {
+    width: 80%;
+  }
+}

@@ -1,0 +1,17 @@
+
+@import 'variables';
+
+.narrow-container {
+  max-width: $narrow-container;
+}
+
+/* Flex Container */
+.flex-container {
+  @extend .narrow-container;
+  display: flex;
+  flex-flow: column;
+  
+  @media (min-width: $small){
+    flex-flow: row;
+  }
+}
