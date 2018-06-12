@@ -1,10 +1,20 @@
 
 @import 'variables';
+@import 'grid';
 
-/* Prefooter */
+
+#footer.standard {
+  padding: 60px 0 70px !important;
+  position: relative;
+}
+
+
+
+
 .prefooter {
   background: #eee;
   padding: 50px 0;
+  position: relative;
 }
 
 
@@ -32,5 +42,23 @@
     &:nth-child(2){
       width: 80%;
     }
+  }
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+  @extend .narrow-container;
+}
+
+.footer-socials {
+  padding-top: 30px;
+  
+  @media (min-width: $small){
+    text-align: left !important;
+  }
+
+  a:first-child {
+    margin-left: 0 !important;
   }
 }
