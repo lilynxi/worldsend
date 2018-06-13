@@ -25,7 +25,7 @@
 ?>
 
 <!-- Pre Footer -->
-<section id="prefooter" class="prefooter">
+<!-- <section id="prefooter" class="prefooter">
 	<div class="section-title left">World's End Artists</div>
 	<div class="vc_container flex-container prefooter-content">
 		<div class="prefooter-artist">
@@ -53,7 +53,7 @@
 			<p><a href="#">Instagram</a></p>
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 

@@ -136,11 +136,6 @@ a {
   position: relative;
   top: -4px;
 }
-@media (min-width: 1200px) {
-  .section-title.right, .section-title.left {
-    display: inline-block;
-  }
-}
 
 /* Hero Image */
 .hero-image .wpb_column {
@@ -216,6 +211,13 @@ a {
 
 .home #menu-main-menu {
   text-align: center;
+}
+
+#header {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  background: transparent !important;
 }
 
 .prefooter {

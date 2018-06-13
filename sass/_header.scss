@@ -14,3 +14,26 @@
 .home #menu-main-menu {
   text-align: center;
 }
+
+
+/// EXPERIMENTAL
+
+#header {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  background: transparent !important;
+}
+
+// .page-id-827 #header.standard {
+//   padding-bottom: 700px !important;
+// }
+
+// .page-id-827 #main-wrapper {
+//   margin-top: -600px;
+// }
+
+// h1 {
+//   color: $white;
+//   font-size: 58px !important;
+// }
