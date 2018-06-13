@@ -44,19 +44,23 @@ a {
   font-size: 12px;
   position: absolute;
   top: -40px;
+  z-index: 1;
 
   &.left {
     left: 30px;
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%,-50%);
-    
   }
   &.right {
     right: 30px;
     transform-origin: top right;
     transform: rotate(-90deg) translate(0%,-50%);
   }
-
+  // &.centered {
+  //   left: 50%;
+  //   transform-origin: top left;
+  //   transform: rotate(-90deg) translate(-100%,-50%);
+  // }
   &:after{
     content:"";
     width: 80px;
@@ -70,5 +74,19 @@ a {
 
   @media(min-width: $small){
     display: inline-block;
+  }
+}
+
+#welcome-section h1,
+#welcome-section p {
+  color: $white;
+}
+
+#welcome-section h1 {
+  @media(min-width: $small){
+    font-size: 36px;
+  }
+  @media(min-width: $medium){
+    font-size: 46px;
   }
 }

@@ -61,6 +61,7 @@ a {
   font-size: 12px;
   position: absolute;
   top: -40px;
+  z-index: 1;
 }
 .section-title.left {
   left: 30px;
@@ -88,8 +89,25 @@ a {
   }
 }
 
-.narrow-container, .flex-container, .footer-bottom {
+#welcome-section h1,
+#welcome-section p {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #welcome-section h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #welcome-section h1 {
+    font-size: 46px;
+  }
+}
+
+.narrow-container, .flex-container, #welcome-section > div > div, .footer-bottom {
   max-width: 1040px;
+  margin: 0 auto;
 }
 
 /* Flex Container */
@@ -103,15 +121,102 @@ a {
   }
 }
 
+/* Welcome Section */
+#welcome-section {
+  background: #1C191C;
+  padding: 50px 0 140px;
+  margin-bottom: -80px;
+}
+
+.vc_container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #welcome-teaser-section .vc_col-sm-6:first-child {
+    width: 100%;
+  }
+  #welcome-teaser-section .vc_col-sm-6:nth-child(2) {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #welcome-teaser-section .vc_col-sm-6:first-child {
+    width: 60%;
+  }
+  #welcome-teaser-section .vc_col-sm-6:nth-child(2) {
+    width: 40%;
+  }
+}
+
+.welcome-teaser {
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .welcome-teaser {
+    padding-top: 130px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome-teaser {
+    padding-top: 180px;
+    padding-left: 50px;
+  }
+}
+
+.kraft-carousel .owl-nav {
+  bottom: 0;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 0;
+}
+.kraft-carousel .owl-nav .owl-prev,
+.kraft-carousel .owl-nav .owl-next {
+  background: #fff;
+  color: #1C191C;
+}
+
 #footer.standard {
   padding: 60px 0 70px !important;
   position: relative;
 }
 
 .prefooter {
-  background: #eee;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .prefooter {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  .prefooter {
+    padding: 70px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .prefooter {
+    padding: 90px 0;
+  }
+}
+@media (min-width: 768px) {
+  .prefooter:before {
+    content: 'Artist';
+    font-size: 460px;
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    text-transform: uppercase;
+    color: #f1f4f5;
+    position: absolute;
+    line-height: 0.5;
+    display: block;
+    width: 100%;
+    left: -50px;
+  }
 }
 
 @media (min-width: 768px) {
