@@ -53,42 +53,6 @@ a {
   }
 }
 
-.section-title {
-  display: none;
-  color: #8E8E8E;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 12px;
-  position: absolute;
-  top: -40px;
-  z-index: 1;
-}
-.section-title.left {
-  left: 30px;
-  transform-origin: top left;
-  transform: rotate(-90deg) translate(-100%, -50%);
-}
-.section-title.right {
-  right: 30px;
-  transform-origin: top right;
-  transform: rotate(-90deg) translate(0%, -50%);
-}
-.section-title:after {
-  content: "";
-  width: 80px;
-  height: 1px;
-  background: #8E8E8E;
-  display: inline-block;
-  margin-left: 20px;
-  position: relative;
-  top: -4px;
-}
-@media (min-width: 768px) {
-  .section-title {
-    display: inline-block;
-  }
-}
-
 #welcome-section h1,
 #welcome-section p {
   color: #fff;
@@ -103,6 +67,10 @@ a {
   #welcome-section h1 {
     font-size: 42px;
   }
+}
+
+.vc_row[data-vc-full-width] {
+  overflow: visible !important;
 }
 
 .narrow-container, .flex-container, #welcome-section > div > div, .footer-bottom {
@@ -121,15 +89,72 @@ a {
   }
 }
 
-/* Welcome Section */
-#welcome-section {
-  background: #1C191C;
-  padding: 50px 0 140px;
-  margin-bottom: -80px;
+.section-title {
+  position: absolute;
+  top: -40px;
+  color: #8E8E8E;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  z-index: 1;
+}
+.section-title.left {
+  left: 5%;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-100%, -50%);
+  display: none;
+}
+.section-title.right {
+  right: 5%;
+  transform-origin: top right;
+  transform: rotate(-90deg) translate(0%, -50%);
+  display: none;
+}
+.section-title.center {
+  left: 50%;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-100%, -50%);
+  top: -180px;
+}
+.section-title.left:after, .section-title.right:after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #8E8E8E;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  top: -4px;
+}
+.section-title.center:before {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #8E8E8E;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  top: -4px;
+}
+@media (min-width: 1200px) {
+  .section-title.right, .section-title.left {
+    display: inline-block;
+  }
 }
 
-.vc_container {
-  position: relative;
+/* Hero Image */
+.hero-image .wpb_column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/* Homepage */
+#welcome-section {
+  background: #1C191C;
+  padding: 70px 0 140px;
+  margin-bottom: -80px;
 }
 
 @media (min-width: 768px) {
@@ -178,15 +203,24 @@ a {
   color: #1C191C;
 }
 
-#footer.standard {
-  padding: 60px 0 70px !important;
-  position: relative;
+.home #header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background: transparent;
+}
+
+.home #logo {
+  display: none !important;
+}
+
+.home #menu-main-menu {
+  text-align: center;
 }
 
 .prefooter {
   padding: 30px 0;
   position: relative;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   .prefooter {
@@ -203,21 +237,6 @@ a {
     padding: 90px 0;
   }
 }
-@media (min-width: 768px) {
-  .prefooter:before {
-    content: 'Artists';
-    font-size: 460px;
-    text-align: center;
-    font-family: 'Abril Fatface', serif;
-    text-transform: uppercase;
-    color: #f1f4f5;
-    position: absolute;
-    line-height: 0.5;
-    display: block;
-    width: 100%;
-    left: -50px;
-  }
-}
 
 @media (min-width: 768px) {
   .prefooter-artist {
@@ -232,6 +251,11 @@ a {
 }
 
 /* Footer */
+#footer.standard {
+  padding: 60px 0 70px !important;
+  position: relative;
+}
+
 @media (min-width: 768px) {
   .footer-block {
     width: 90%;
@@ -255,19 +279,4 @@ a {
 }
 .footer-socials a:first-child {
   margin-left: 0 !important;
-}
-
-.home #header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  background: linear-gradient(to top, transparent, black);
-}
-
-.home #logo {
-  display: none !important;
-}
-
-.home #menu-main-menu {
-  text-align: center;
 }

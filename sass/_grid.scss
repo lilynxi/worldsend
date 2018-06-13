@@ -1,6 +1,11 @@
 
 @import 'variables';
 
+
+.vc_row[data-vc-full-width]{
+  overflow: visible !important;
+}
+
 .narrow-container {
   max-width: $narrow-container;
   margin: 0 auto;
@@ -17,73 +22,5 @@
   }
 }
 
-/* Welcome Section */
-#welcome-section {
-  background: $dark-grey;
-  padding: 50px 0 140px;
-  margin-bottom: -80px;
 
-  > div > div {
-    @extend .narrow-container;
-  }
-}
-
-.vc_container {
-  position: relative;
-}
-
-
-// .kraft-carousel {
-//   @media (min-width: $small){
-//     padding-right: 60px;
-//   } 
-// }
-
-#welcome-teaser-section {
-  @media (min-width: $small){
-    .vc_col-sm-6:first-child {
-      width: 100%;
-    }
-    .vc_col-sm-6:nth-child(2) {
-      width: 100%;
-    }
-  }
-  @media (min-width: $medium){
-    .vc_col-sm-6:first-child {
-      width: 60%;
-    }
-    .vc_col-sm-6:nth-child(2) {
-      width: 40%;
-    }
-  }
-}
-
-.welcome-teaser {
-  padding-top: 30px;
-
-  @media (min-width: $medium){
-    padding-top: 130px;
-    padding-left: 20px;
-  }
-  @media (min-width: $large){
-    padding-top: 180px;
-    padding-left: 50px;
-  }
-}
-
-
-// pagination
-.kraft-carousel .owl-nav {
-  bottom: 0;
-  top: auto;
-  transform: none;
-  width: auto;
-  right: 0;
-
-  .owl-prev,
-  .owl-next {
-    background: $white;
-    color: $dark-grey;
-  }
-}
 

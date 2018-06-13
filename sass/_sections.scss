@@ -1,0 +1,130 @@
+
+@import 'variables';
+
+// Section Title Rotated
+.section-title {
+  position: absolute;
+  top: -40px;
+  color: $light-grey;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  z-index: 1;
+
+  &.left {
+    left: 5%;
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-100%,-50%);
+    display: none;
+  }
+  &.right {
+    right: 5%;
+    transform-origin: top right;
+    transform: rotate(-90deg) translate(0%,-50%);
+    display: none;
+  }
+  &.center {
+    left: 50%;
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-100%,-50%);
+    top: -180px;
+  }
+  &.left:after,
+  &.right:after{
+    content:"";
+    width: 80px;
+    height: 1px;
+    background: $light-grey;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: -4px;
+  }
+  &.center:before {
+    content:"";
+    width: 80px;
+    height: 1px;
+    background: $light-grey;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -4px;
+  }
+
+
+  @media(min-width: $large){
+    &.right,
+    &.left {
+      display: inline-block;
+    }
+  }
+}
+
+
+/* Hero Image */
+.hero-image .wpb_column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.8)0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%,rgba(0,0,0,0.8) 100%);
+}
+
+
+
+/* Homepage */
+#welcome-section {
+  background: $dark-grey;
+  padding: 70px 0 140px;
+  margin-bottom: -80px;
+
+  > div > div {
+    @extend .narrow-container;
+  }
+}
+
+#welcome-teaser-section {
+  @media (min-width: $small){
+    .vc_col-sm-6:first-child {
+      width: 100%;
+    }
+    .vc_col-sm-6:nth-child(2) {
+      width: 100%;
+    }
+  }
+  @media (min-width: $medium){
+    .vc_col-sm-6:first-child {
+      width: 60%;
+    }
+    .vc_col-sm-6:nth-child(2) {
+      width: 40%;
+    }
+  }
+}
+
+.welcome-teaser {
+  padding-top: 30px;
+
+  @media (min-width: $medium){
+    padding-top: 130px;
+    padding-left: 20px;
+  }
+  @media (min-width: $large){
+    padding-top: 180px;
+    padding-left: 50px;
+  }
+}
+
+// carousel
+.kraft-carousel .owl-nav {
+  bottom: 0;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 0;
+
+  .owl-prev,
+  .owl-next {
+    background: $white;
+    color: $dark-grey;
+  }
+}
