@@ -1,12 +1,11 @@
 
 @import 'variables';
 
-.home #header {
+/* Header Home */
+#header {
   position: absolute;
   z-index: 10;
   width: 100%;
-  background: transparent;
-  //background: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,1));
 }
 
 .home #logo {
@@ -66,6 +65,6 @@
   }
   #header.standard .header-wrapper #main-menu>ul>li>a {
     text-align: center !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 }

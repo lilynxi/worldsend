@@ -24,32 +24,46 @@ a {
   color: $white;
 }
 
-#prefooter h4 {
-  font-size: 38px;
+// #prefooter h4 {
+//   font-size: 38px;
 
-  @media (min-width: $small){
-    font-size: 45px;
-  }
+//   @media (min-width: $small){
+//     font-size: 45px;
+//   }
 
-  @media (min-width: $medium){
-    font-size: 60px;
-  }
-}
-
-
+//   @media (min-width: $medium){
+//     font-size: 60px;
+//   }
+// }
 
 
-// Home
-#welcome-section h1,
-#welcome-section p {
+
+
+// Home --> delete these styles later
+#welcome h1,
+#welcome h2,
+#welcome p {
   color: $white;
 }
 
-#welcome-section h1 {
+#welcome h1 {
   @media(min-width: $small){
     font-size: 36px;
   }
   @media(min-width: $medium){
     font-size: 42px;
   }
+}
+
+#welcome h2 {
+  @media(min-width: $small){
+    font-size: 30px;
+  }
+  @media(min-width: $medium){
+    font-size: 36px;
+  }
+}
+
+#welcome p {
+  padding-top: 10px;
 }
