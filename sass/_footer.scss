@@ -4,50 +4,50 @@
 
 
 // prefooter
-.prefooter {
-  padding: 30px 0;
-  position: relative;
+// .prefooter {
+//   padding: 30px 0;
+//   position: relative;
 
-  @media (min-width: $small){
-    padding: 50px 0;
-  }
-  @media (min-width: $medium){
-    padding: 70px 0;
-  }
-  @media (min-width: $large){
-    padding: 90px 0;
-  }
+//   @media (min-width: $small){
+//     padding: 50px 0;
+//   }
+//   @media (min-width: $medium){
+//     padding: 70px 0;
+//   }
+//   @media (min-width: $large){
+//     padding: 90px 0;
+//   }
 
-  // @media (min-width: $small){
-  //   &:before {
-  //     content: 'Artists';
-  //     font-size: 460px;
-  //     text-align: center;
-  //     font-family: 'Abril Fatface', serif;
-  //     text-transform: uppercase;
-  //     color: $lightest-grey;
-  //     position: absolute;
-  //     line-height: 0.5;
-  //     display: block;
-  //     width: 100%;
-  //     left: -50px;
-  //     z-index: -1;
-  //   }
-  // }
-}
+//   // @media (min-width: $small){
+//   //   &:before {
+//   //     content: 'Artists';
+//   //     font-size: 460px;
+//   //     text-align: center;
+//   //     font-family: 'Abril Fatface', serif;
+//   //     text-transform: uppercase;
+//   //     color: $lightest-grey;
+//   //     position: absolute;
+//   //     line-height: 0.5;
+//   //     display: block;
+//   //     width: 100%;
+//   //     left: -50px;
+//   //     z-index: -1;
+//   //   }
+//   // }
+// }
 
 
-.prefooter-artist {
-  @media (min-width: $small){
-    width: 85%;
-    &:nth-child(2){
-      width: 100%;
-    }
-    &:nth-child(3){
-      width: 80%;
-    }
-  }
-}
+// .prefooter-artist {
+//   @media (min-width: $small){
+//     width: 85%;
+//     &:nth-child(2){
+//       width: 100%;
+//     }
+//     &:nth-child(3){
+//       width: 80%;
+//     }
+//   }
+// }
 
 
 /* Footer */
