@@ -17,7 +17,7 @@
 /* Colors */
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abril Fatface', serif;
+  font-family: "Abril Fatface", serif;
   font-weight: normal;
 }
 
@@ -169,17 +169,17 @@ a {
   }
 }
 
-.welcome-teaser {
+.welcome-teaser-text {
   padding-top: 30px;
 }
 @media (min-width: 992px) {
-  .welcome-teaser {
+  .welcome-teaser-text {
     padding-top: 130px;
     padding-left: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .welcome-teaser {
+  .welcome-teaser-text {
     padding-top: 180px;
     padding-left: 50px;
   }
@@ -196,6 +196,68 @@ a {
 .kraft-carousel .owl-nav .owl-next {
   background: #fff;
   color: #1C191C;
+}
+
+/* Artist Section */
+#artist-section {
+  display: flex;
+  flex-flow: column;
+}
+#artist-section .vc_col-sm-6:first-child {
+  order: 1;
+}
+@media (min-width: 768px) {
+  #artist-section {
+    display: block;
+  }
+  #artist-section .vc_col-sm-6:first-child {
+    width: 40%;
+    order: 0;
+  }
+  #artist-section .vc_col-sm-6:nth-child(2) {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  #artist-section .vc_col-sm-6:first-child {
+    width: 40%;
+  }
+  #artist-section .vc_col-sm-6:nth-child(2) {
+    width: 60%;
+  }
+}
+
+.artist-text {
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .artist-text {
+    padding-top: 10px;
+    padding-left: 78px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .artist-text {
+    padding-top: 50px;
+  }
+}
+
+.artist-text a {
+  font-size: 90px;
+  font-family: "Abril Fatface", serif;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .artist-text a {
+    font-size: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .artist-text a {
+    font-size: 120px;
+  }
 }
 
 .home #header {

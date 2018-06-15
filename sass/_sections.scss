@@ -101,7 +101,7 @@
   }
 }
 
-.welcome-teaser {
+.welcome-teaser-text {
   padding-top: 30px;
 
   @media (min-width: $medium){
@@ -126,5 +126,62 @@
   .owl-next {
     background: $white;
     color: $dark-grey;
+  }
+}
+
+
+/* Artist Section */
+#artist-section {
+  display: flex;
+  flex-flow: column;
+
+  .vc_col-sm-6:first-child {
+    order: 1;
+  }
+
+  @media (min-width: $small){
+    display: block;
+
+    .vc_col-sm-6:first-child {
+      width: 40%;
+      order: 0;
+    }
+    .vc_col-sm-6:nth-child(2) {
+      width: 60%;
+    }
+  }
+  @media (min-width: $medium){
+    .vc_col-sm-6:first-child {
+      width: 40%;
+    }
+    .vc_col-sm-6:nth-child(2) {
+      width: 60%;
+    }
+  }
+}
+
+.artist-text {
+  z-index: 1;
+
+  @media (min-width: $medium){
+    padding-top: 10px;
+    padding-left: 78px !important;
+  }
+  @media (min-width: $large){
+    padding-top: 50px;
+  }
+}
+
+.artist-text a {
+  font-size: 90px;
+  font-family: $headline-font;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-block;
+  @media (min-width: $medium){
+    font-size: 100px;
+  }
+  @media (min-width: $large){
+    font-size: 120px;
   }
 }
