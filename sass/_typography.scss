@@ -1,6 +1,13 @@
 
 @import 'variables';
 
+/* Button */
+.cta-home button {
+  border-color: $white !important;
+  color: $white !important;
+  background: transparent !important;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
@@ -24,6 +31,23 @@ a {
   color: $white;
 }
 
+
+
+#description {
+  color: $white;
+
+  h1 {
+    color: $white;
+
+    @media(min-width: $small){
+      font-size: 36px;
+    }
+    @media(min-width: $medium){
+      font-size: 42px;
+    }   
+  }
+}
+
 // #prefooter h4 {
 //   font-size: 38px;
 
@@ -40,30 +64,30 @@ a {
 
 
 // Home --> delete these styles later
-#welcome h1,
-#welcome h2,
-#welcome p {
-  color: $white;
-}
+// #welcome h1,
+// #welcome h2,
+// #welcome p {
+//   color: $white;
+// }
 
-#welcome h1 {
-  @media(min-width: $small){
-    font-size: 36px;
-  }
-  @media(min-width: $medium){
-    font-size: 42px;
-  }
-}
+// #welcome h1 {
+//   @media(min-width: $small){
+//     font-size: 36px;
+//   }
+//   @media(min-width: $medium){
+//     font-size: 42px;
+//   }
+// }
 
-#welcome h2 {
-  @media(min-width: $small){
-    font-size: 30px;
-  }
-  @media(min-width: $medium){
-    font-size: 36px;
-  }
-}
+// #welcome h2 {
+//   @media(min-width: $small){
+//     font-size: 30px;
+//   }
+//   @media(min-width: $medium){
+//     font-size: 36px;
+//   }
+// }
 
-#welcome p {
-  padding-top: 10px;
-}
+// #welcome p {
+//   padding-top: 10px;
+// }
