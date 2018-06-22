@@ -24,42 +24,10 @@
 	$footer_text = '&#169; 2017 Kraft';
 ?>
 
-<!-- Pre Footer -->
-<!-- <section id="prefooter" class="prefooter">
-	<div class="section-title left">World's End Artists</div>
-	<div class="vc_container flex-container prefooter-content">
-		<div class="prefooter-artist">
-			<h4>Heiko</h4>
-			<p><a href="#">Informationen</a></p>
-			<p><a href="#">Facebook</a></p>
-			<p><a href="#">Instagram</a></p>
-		</div>
-		<div class="prefooter-artist">
-			<h4>Nikolai</h4>
-			<p><a href="#">Informationen</a></p>
-			<p><a href="#">Facebook</a></p>
-			<p><a href="#">Instagram</a></p>
-		</div>
-		<div class="prefooter-artist">
-			<h4>Ianto</h4>
-			<p><a href="#">Informationen</a></p>
-			<p><a href="#">Facebook</a></p>
-			<p><a href="#">Instagram</a></p>
-		</div>
-		<div class="prefooter-artist">
-			<h4>Steven</h4>
-			<p><a href="#">Informationen</a></p>
-			<p><a href="#">Facebook</a></p>
-			<p><a href="#">Instagram</a></p>
-		</div>
-	</div>
-</section> -->
-
 
 
 <!-- Footer -->
 <footer id="footer" class="footer standard">
-	<!-- <div class="section-title right">Kontakt</div> -->
 	<div class="vc_container flex-container footer-content">
 		<div class="footer-block">
 			<h4>Termin & Beratung</h4>

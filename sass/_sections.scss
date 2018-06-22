@@ -256,14 +256,15 @@
 
 #artists-links {
   z-index: 1;
+  margin-top: 40px;
   @media (min-width: $small){
     margin-top: 40px;
   }
   @media (min-width: $medium){
-    margin-top: 80px;
+    margin-top: 60px;
   }
   @media (min-width: $large){
-    margin-top: 120px;
+    margin-top: 100px;
     padding-left: 78px !important;
   }
 }
@@ -275,10 +276,23 @@
     margin-top: -50px
   }
   @media (min-width: $medium){
-    margin-top: -20px
+    margin-top: -50px
   }
 }
 
 
+// carousel
+.kraft-carousel .owl-nav {
+  bottom: 0;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 0;
 
+  .owl-prev,
+  .owl-next {
+    background: $white;
+    color: $dark-grey;
+  }
+}
 

@@ -336,6 +336,7 @@ p {
 
 #artists-links {
   z-index: 1;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   #artists-links {
@@ -344,12 +345,12 @@ p {
 }
 @media (min-width: 992px) {
   #artists-links {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 @media (min-width: 1200px) {
   #artists-links {
-    margin-top: 120px;
+    margin-top: 100px;
     padding-left: 78px !important;
   }
 }
@@ -364,8 +365,21 @@ p {
 }
 @media (min-width: 992px) {
   #artists-image {
-    margin-top: -20px;
+    margin-top: -50px;
   }
+}
+
+.kraft-carousel .owl-nav {
+  bottom: 0;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 0;
+}
+.kraft-carousel .owl-nav .owl-prev,
+.kraft-carousel .owl-nav .owl-next {
+  background: #fff;
+  color: #111;
 }
 
 /* Header Home */
@@ -436,6 +450,14 @@ p {
   }
   #menu-main-menu li {
     border: none !important;
+    padding-left: 0;
+  }
+  #menu-main-menu li a {
+    padding-left: 0;
+    text-align: center !important;
+  }
+  #menu-main-menu .sub-menu li a {
+    font-size: 15px !important;
   }
 
   #header.standard .header-wrapper #main-menu > ul > li > a {
