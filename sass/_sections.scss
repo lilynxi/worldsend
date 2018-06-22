@@ -12,35 +12,35 @@
   font-size: 12px;
   z-index: 1;
 
-  &.left {
-    left: 5%;
-    transform-origin: top left;
-    transform: rotate(-90deg) translate(-100%,-50%);
-    display: none;
-  }
-  &.right {
-    right: 5%;
-    transform-origin: top right;
-    transform: rotate(-90deg) translate(0%,-50%);
-    display: none;
-  }
+  // &.left {
+  //   left: 5%;
+  //   transform-origin: top left;
+  //   transform: rotate(-90deg) translate(-100%,-50%);
+  //   display: none;
+  // }
+  // &.right {
+  //   right: 5%;
+  //   transform-origin: top right;
+  //   transform: rotate(-90deg) translate(0%,-50%);
+  //   display: none;
+  // }
   &.center {
     left: 50%;
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%,-50%);
-    top: -182px;
+    top: -115px;
   }
-  &.left:after,
-  &.right:after{
-    content:"";
-    width: 80px;
-    height: 1px;
-    background: $light-grey;
-    display: inline-block;
-    margin-left: 20px;
-    position: relative;
-    top: -4px;
-  }
+  // &.left:after,
+  // &.right:after{
+  //   content:"";
+  //   width: 80px;
+  //   height: 1px;
+  //   background: $light-grey;
+  //   display: inline-block;
+  //   margin-left: 20px;
+  //   position: relative;
+  //   top: -4px;
+  // }
   &.center:before {
     content:"";
     width: 80px;
@@ -50,6 +50,7 @@
     margin-right: 20px;
     position: relative;
     top: -4px;
+    opacity: 0.6;
   }
 
   // @media(min-width: $large){
@@ -90,21 +91,35 @@
 
 #hero-image h1 {
   text-transform: uppercase;
-  font-size: 110px;
+  font-size: 60px;
   color: $white;
   letter-spacing: 5px;
-  margin: 0 auto -60px;
+  margin: 0 auto -40px;
+
+  @media (min-width: $extra-small){
+    font-size: 80px;
+    margin-bottom: -50px;
+  }
+  @media (min-width: $small){
+    font-size: 100px;
+    margin-bottom: -60px;
+  }
+  @media (min-width: $medium){
+    font-size: 120px;
+  }
 
   @media (min-width: $large){
     padding-left: 75px;
+    font-size: 130px;
+    margin-bottom: -70px;
   }
 }
 
-#description {
+#intro {
   background: $dark-grey;
   background: linear-gradient(to top, $white 0, $white 44%, $dark-grey 44% );
-  padding: 70px 0 420px;
-  margin-bottom: -380px;
+  padding: 90px 0 410px;
+  margin-bottom: -370px;
 
   > div > div {
     @extend .narrow-container;
@@ -128,10 +143,9 @@
   }
 }
 
-#description-alternative {
-  @extend #description;
-  background: white;
-}
+
+
+
 
 // image gallery
 .image-gallery {
@@ -146,14 +160,27 @@
 
 
 /* Split Section  */
+// .split-section {
+//   display: flex;
+//   flex-flow: column;
+
+//   @media (min-width: $small){
+//     flex-flow: row;
+//     align-items: center;
+//   }
+// }
+
 .split-section {
   display: flex;
   flex-flow: column;
+
+  @media (min-width: $small){
+    display: block;
+  }
 }
 
 .left-wide {
   @media (min-width: $small){
-    display: block;
     .vc_col-sm-6:first-child { width: 58%; }
     .vc_col-sm-6:nth-child(2) { width: 42%; }
   }
@@ -165,7 +192,6 @@
 .right-wide {
   .vc_col-sm-6:first-child { order: 1; }
   @media (min-width: $small){
-    display: block;
     .vc_col-sm-6:first-child { width: 42%; order: 0; }
     .vc_col-sm-6:nth-child(2) { width: 58%; }
   }
@@ -175,52 +201,16 @@
   }
 }
 
-#home-studio-section,
-#home-artist-section {
-  margin-bottom: 40px;
-  @media (min-width: $medium){
-    margin-bottom: 80px;
-  }
-}
 
-#home-studio-intro {
-  padding-top: 30px;
 
-  @media (min-width: $small){
-    padding-top: 130px;
-  }
-  @media (min-width: $medium){
-    padding-top: 130px;
-    padding-left: 20px;
-    padding-right: 30px;
-  }
-  @media (min-width: $large){
-    padding-top: 180px;
-    padding-left: 50px;
-    padding-right: 60px;
-  }
-}
-
-#artist-links {
-  z-index: 1;
-  @media (min-width: $small){
-    padding-top: 40px;
-  }
-  @media (min-width: $medium){
-    padding-top: 40px;
-  }
-  @media (min-width: $large){
-    padding-top: 50px;
-    padding-left: 78px !important;
-  }
-}
-
-#artist-links a {
+.large-links {
   font-size: 60px;
   font-family: $headline-font;
   text-transform: uppercase;
   line-height: 1.1;
   display: inline-block;
+  text-decoration: none;
+
   @media (min-width: $extra-small){
     font-size: 60px;
   }
@@ -228,78 +218,106 @@
     font-size: 70px;
   }
   @media (min-width: $medium){
-    font-size: 100px;
+    font-size: 90px;
   }
   @media (min-width: $large){
-    font-size: 120px;
+    font-size: 95px;
   }
 }
 
-#studio-link,
-.studio-link {
-  @extend #artist-links;
-  padding-top: 0 !important;
-  margin-bottom: 60px;
-  a {
-    color: $white !important;
-  }
-}
+#artists-links a {
+  @extend .large-links;
+  border-bottom: 2px solid $dark-grey;
 
-// carousel
-.kraft-carousel .owl-nav {
-  bottom: 0;
-  top: auto;
-  transform: none;
-  width: auto;
-  right: 0;
-
-  .owl-prev,
-  .owl-next {
-    background: $white;
+  &:hover {
+    border-color: $white;
     color: $dark-grey;
   }
 }
 
-
-
-// HACKS
-.page-id-1193 {
-  #main-wrapper .vc_container:nth-child(2){
-    height: 0;
+#intro-link p {
+  @media (min-width: $small){
+    text-align: right !important;
+    margin-top: 65px;
   }
-  .section-title.center {
-    top: -110px;
+  @media (min-width: $medium){
+    margin-top: 30px;
+  }
+  @media (min-width: $large){
+    margin-top: 20px;
   }
 }
 
+#intro-link a {
+  @extend .large-links;
+  color: $white;
+  border-bottom: 2px solid $white;
 
+  &:hover {
+    border-color: $dark-grey;
+  }
+}
 
+#artists-links {
+  z-index: 1;
+  @media (min-width: $small){
+    margin-top: 60px;
+  }
+  @media (min-width: $medium){
+    margin-top: 80px;
+  }
+  @media (min-width: $large){
+    margin-top: 120px;
+    padding-left: 78px !important;
+  }
+}
 
+#artists-image {
+  margin-top: -25px;
 
-/* Sub Pages */
-// #filter-background {
-//   background-color: $dark-grey;
-//   height: 100px;
-// }
+  @media (min-width: $small){
+    margin-top: -30px
+  }
+  @media (min-width: $medium){
+    margin-top: 0px
+  }
+}
 
-// #work-portfolio {
-//   position: relative;
-//   top: -100px;
-
-//   .cbp-filter-item-active {
-//     color: $white;
+// #studio-link,
+// .studio-link {
+//   @extend #artist-links;
+//   padding-top: 0 !important;
+//   margin-bottom: 60px;
+//   a {
+//     color: $white !important;
 //   }
-//   .cbp-filter-item:hover {
-//     color: $white;
+// }
+
+// carousel
+// .kraft-carousel .owl-nav {
+//   bottom: 0;
+//   top: auto;
+//   transform: none;
+//   width: auto;
+//   right: 0;
+
+//   .owl-prev,
+//   .owl-next {
+//     background: $white;
+//     color: $dark-grey;
 //   }
 // }
 
-// #info-ablauf {
-//   background: $dark-grey;
-//   padding: 70px 0 40px;
-//   margin-bottom: 50px;
 
-//   // > div > div {
-//   //   @extend .narrow-container;
-//   // }
+
+// HACKS
+// .page-id-1193 {
+//   #main-wrapper .vc_container:nth-child(2){
+//     height: 0;
+//   }
+//   .section-title.center {
+//     top: -110px;
+//   }
 // }
+
+

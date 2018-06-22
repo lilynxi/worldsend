@@ -1,12 +1,14 @@
 
 @import 'variables';
 
+.home #main-wrapper .vc_container:nth-child(2) {
+  height: 0;
+}
+
 
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
 }
-
-
 
 .narrow-container {
   max-width: $narrow-container;

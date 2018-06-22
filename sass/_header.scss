@@ -20,6 +20,14 @@
   position: absolute;
   top: -30px;
 
+  img {
+    max-width: 160px !important;
+
+    @media (min-width:$medium){
+      max-width: 190px !important;
+    }
+  }
+
   @media (min-width:$small){
     top: -10px;
   }

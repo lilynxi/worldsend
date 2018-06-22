@@ -2,20 +2,29 @@
 @import 'variables';
 
 /* Button */
-.cta-home button {
-  border-color: $white !important;
-  color: $white !important;
-  background: transparent !important;
-}
+// .cta-home button {
+//   border-color: $white !important;
+//   color: $white !important;
+//   background: transparent !important;
+// }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
   font-weight: normal;
+  color: $black;
 }
 
 a {
   text-decoration: underline;
+}
+
+p {
+  color: $light-grey;
+}
+
+.background-white p {
+  color: $dark-grey;
 }
 
 #footer h4 {
@@ -31,33 +40,24 @@ a {
   color: $white;
 }
 
-
-
-#description {
-  color: $white;
-
-  h1 {
-    color: $white;
-
-    @media(min-width: $small){
-      font-size: 36px;
-    }
-    @media(min-width: $medium){
-      font-size: 42px;
-    }   
-  }
-
-  // h2 {
-  //   color: $white;
-
-  //   @media(min-width: $small){
-  //     font-size: 24px;
-  //   }
-  //   @media(min-width: $medium){
-  //     font-size: 36px;
-  //   }   
-  // }
+#footer p {
+  line-height: 1.6;
 }
+
+// #description {
+//   color: $white;
+
+//   h1 {
+//     color: $white;
+
+//     @media(min-width: $small){
+//       font-size: 36px;
+//     }
+//     @media(min-width: $medium){
+//       font-size: 42px;
+//     }   
+//   }
+// }
 
 // #prefooter h4 {
 //   font-size: 38px;
