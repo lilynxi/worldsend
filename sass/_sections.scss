@@ -28,7 +28,7 @@
     left: 50%;
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%,-50%);
-    top: -200px;
+    top: -182px;
   }
   &.left:after,
   &.right:after{
@@ -94,6 +94,10 @@
   color: $white;
   letter-spacing: 5px;
   margin: 0 auto -60px;
+
+  @media (min-width: $large){
+    padding-left: 75px;
+  }
 }
 
 #description {
@@ -105,10 +109,39 @@
   > div > div {
     @extend .narrow-container;
   }
+
+  // two column intro on sub-pages
+  &.two-column-text {
+    > div:first-child {
+      @media (min-width: $small){
+        padding-right: 20px;
+      }
+      @media (min-width: $large){
+        padding-left: 75px;
+      }
+    }
+    > div:nth-child(2) {
+      @media (min-width: $large){
+        padding-right: 75px;
+      }
+    }
+  }
 }
 
+#description-alternative {
+  @extend #description;
+  background: white;
+}
 
+// image gallery
+.image-gallery {
+  margin-bottom: 40px;
+}
 
+// background white
+.background-white {
+  background: white;
+}
 
 
 
@@ -202,6 +235,16 @@
   }
 }
 
+#studio-link,
+.studio-link {
+  @extend #artist-links;
+  padding-top: 0 !important;
+  margin-bottom: 60px;
+  a {
+    color: $white !important;
+  }
+}
+
 // carousel
 .kraft-carousel .owl-nav {
   bottom: 0;
@@ -214,6 +257,18 @@
   .owl-next {
     background: $white;
     color: $dark-grey;
+  }
+}
+
+
+
+// HACKS
+.page-id-1193 {
+  #main-wrapper .vc_container:nth-child(2){
+    height: 0;
+  }
+  .section-title.center {
+    top: -110px;
   }
 }
 

@@ -51,27 +51,28 @@
 
 
 /* Footer */
-
 #footer.standard {
+  background-color: $dark-grey;
   padding: 60px 0 70px !important;
   position: relative;
+  margin-top: 40px !important;
 }
 
 .footer-block {
+  width: 100%;
   @media (min-width: $small){
-    width: 90%;
-    &:nth-child(1){
-      width: 100%;
+    border-right: thin solid rgba($white,0.1);
+
+    &:nth-child(2),
+    &:nth-child(3){
+      padding-left: 30px;
     }
-    &:nth-child(2){
-      width: 80%;
+    &:last-child {
+      border-right: none;
     }
   }
 }
 
-// .footer-content {
-//   position: relative;
-// }
 
 
 
