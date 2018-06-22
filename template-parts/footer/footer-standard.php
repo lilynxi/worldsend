@@ -59,7 +59,7 @@
 
 <!-- Footer -->
 <footer id="footer" class="footer standard">
-	<div class="section-title right">Kontakt</div>
+	<!-- <div class="section-title right">Kontakt</div> -->
 	<div class="vc_container flex-container footer-content">
 		<div class="footer-block">
 			<h4>Termin & Beratung</h4>

@@ -1,7 +1,8 @@
 
 @import 'variables';
 
-.home #main-wrapper .vc_container:nth-child(2) {
+.home #main-wrapper .vc_container:nth-child(2),
+.home #main-wrapper .vc_container:nth-child(4) {
   height: 0;
 }
 
