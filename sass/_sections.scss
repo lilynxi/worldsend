@@ -28,7 +28,7 @@
     display: none;
   }
   &.center {
-    left: 50%;
+    left: 49%;
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%,-50%);
     top: -115px;
@@ -89,13 +89,28 @@
   }
 
   &.home {
-    height: 95vh !important;
-    min-height: 95vh !important;
+    height: 92vh !important;
+    min-height: 92vh !important;
     justify-content: center;
+
+    @media(min-width: $medium){
+      height: 95vh !important;
+      min-height: 95vh !important;
+    }
+  }
+
+  &.contact {
+    max-height: 800px !important;
+    flex-direction: row;
+    overflow: hidden !important;
+
+    &:before {
+      z-index: 2;
+    }
   }
 }
 
-#hero-image h1 {
+.title-font {
   text-transform: uppercase;
   font-size: 60px;
   color: $white;
@@ -121,8 +136,29 @@
   }
 }
 
-#intro {
+#hero-image h1 {
+  @extend .title-font;
+}
+
+// intro contact page
+#intro-contact {
   background: $dark-grey;
+  padding: 0px 0 50px;
+
+  > div > div {
+    @extend .narrow-container;
+  }
+
+  h1 {
+    @extend .title-font;
+    padding-left: 0;
+    top: -100px;
+    z-index: 3;
+    position: relative;
+  }
+}
+
+#intro {
   background: linear-gradient(to top, $white 0, $white 44%, $dark-grey 44% );
   padding: 90px 0 410px;
   margin-bottom: -370px;
@@ -221,13 +257,29 @@
   }
 }
 
-#artists-links a {
+#artists-links a,
+#contact-text a  {
   @extend .large-links;
   border-bottom: 2px solid $dark-grey;
 
   &:hover {
     border-color: $white;
     color: $dark-grey;
+  }
+}
+
+#contact-text a {
+  margin-bottom: 20px;
+  font-size: 46px;
+
+  @media (min-width: $small){
+    font-size: 54px;
+  }
+  @media (min-width: $medium){
+    font-size: 62px;
+  }
+  @media (min-width: $large){
+    font-size: 70px;
   }
 }
 

@@ -62,7 +62,7 @@ p {
   overflow: visible !important;
 }
 
-.narrow-container, .flex-container, #intro > div > div, .footer-bottom {
+.narrow-container, .flex-container, #intro-contact > div > div, #intro > div > div, .footer-bottom {
   max-width: 1010px;
   margin: 0 auto;
 }
@@ -102,7 +102,7 @@ p {
   display: none;
 }
 .section-title.center {
-  left: 50%;
+  left: 49%;
   transform-origin: top left;
   transform: rotate(-90deg) translate(-100%, -50%);
   top: -115px;
@@ -157,12 +157,26 @@ p {
   z-index: 1;
 }
 #hero-image.home {
-  height: 95vh !important;
-  min-height: 95vh !important;
+  height: 92vh !important;
+  min-height: 92vh !important;
   justify-content: center;
 }
+@media (min-width: 992px) {
+  #hero-image.home {
+    height: 95vh !important;
+    min-height: 95vh !important;
+  }
+}
+#hero-image.contact {
+  max-height: 800px !important;
+  flex-direction: row;
+  overflow: hidden !important;
+}
+#hero-image.contact:before {
+  z-index: 2;
+}
 
-#hero-image h1 {
+.title-font, #hero-image h1, #intro-contact h1 {
   text-transform: uppercase;
   font-size: 60px;
   color: #fff;
@@ -170,32 +184,42 @@ p {
   margin: 0 auto -40px;
 }
 @media (min-width: 480px) {
-  #hero-image h1 {
+  .title-font, #hero-image h1, #intro-contact h1 {
     font-size: 80px;
     margin-bottom: -50px;
   }
 }
 @media (min-width: 768px) {
-  #hero-image h1 {
+  .title-font, #hero-image h1, #intro-contact h1 {
     font-size: 100px;
     margin-bottom: -60px;
   }
 }
 @media (min-width: 992px) {
-  #hero-image h1 {
+  .title-font, #hero-image h1, #intro-contact h1 {
     font-size: 120px;
   }
 }
 @media (min-width: 1200px) {
-  #hero-image h1 {
+  .title-font, #hero-image h1, #intro-contact h1 {
     padding-left: 75px;
     font-size: 130px;
     margin-bottom: -70px;
   }
 }
 
-#intro {
+#intro-contact {
   background: #111;
+  padding: 0px 0 50px;
+}
+#intro-contact h1 {
+  padding-left: 0;
+  top: -100px;
+  z-index: 3;
+  position: relative;
+}
+
+#intro {
   background: linear-gradient(to top, #fff 0, #fff 44%, #111 44%);
   padding: 90px 0 410px;
   margin-bottom: -370px;
@@ -272,7 +296,8 @@ p {
   }
 }
 
-.large-links, #artists-links a, #intro-link a {
+.large-links, #artists-links a,
+#contact-text a, #intro-link a {
   font-size: 60px;
   font-family: "Abril Fatface", serif;
   text-transform: uppercase;
@@ -281,32 +306,58 @@ p {
   text-decoration: none;
 }
 @media (min-width: 480px) {
-  .large-links, #artists-links a, #intro-link a {
+  .large-links, #artists-links a,
+  #contact-text a, #intro-link a {
     font-size: 60px;
   }
 }
 @media (min-width: 768px) {
-  .large-links, #artists-links a, #intro-link a {
+  .large-links, #artists-links a,
+  #contact-text a, #intro-link a {
     font-size: 70px;
   }
 }
 @media (min-width: 992px) {
-  .large-links, #artists-links a, #intro-link a {
+  .large-links, #artists-links a,
+  #contact-text a, #intro-link a {
     font-size: 90px;
   }
 }
 @media (min-width: 1200px) {
-  .large-links, #artists-links a, #intro-link a {
+  .large-links, #artists-links a,
+  #contact-text a, #intro-link a {
     font-size: 95px;
   }
 }
 
-#artists-links a {
+#artists-links a,
+#contact-text a {
   border-bottom: 2px solid #111;
 }
-#artists-links a:hover {
+#artists-links a:hover,
+#contact-text a:hover {
   border-color: #fff;
   color: #111;
+}
+
+#contact-text a {
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+@media (min-width: 768px) {
+  #contact-text a {
+    font-size: 54px;
+  }
+}
+@media (min-width: 992px) {
+  #contact-text a {
+    font-size: 62px;
+  }
+}
+@media (min-width: 1200px) {
+  #contact-text a {
+    font-size: 70px;
+  }
 }
 
 @media (min-width: 768px) {

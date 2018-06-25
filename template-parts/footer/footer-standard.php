@@ -42,8 +42,8 @@
 		<div class="footer-block">
 			<h4>Adresse & Anfahrt</h4>
 			<p>Word's End Tattoo<br>Steinstrasse 50<br>8003 Zürich</p>
-			<p><a href="#">Google Maps anzeigen</a></p>
-			<p><a href="#">SBB Fahrplan anzeigen</a></p>
+			<p><a href="https://goo.gl/maps/j3mpGusoaNP2" target="_blank" rel="noopener">Google Maps anzeigen</a></p>
+			<p><a href="https://www.sbb.ch/de/kaufen/pages/fahrplan/fahrplan.xhtml?nach=8003+Z%C3%BCrich+Steinstrasse+50" target="_blank" rel="noopener">SBB Fahrplan anzeigen</a></p>
 		</div>
 	</div>
 
