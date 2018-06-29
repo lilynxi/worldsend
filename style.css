@@ -214,9 +214,21 @@ p {
 }
 #intro-contact h1 {
   padding-left: 0;
-  top: -100px;
+  top: -52px;
+  padding-bottom: 30px;
   z-index: 3;
   position: relative;
+}
+@media (min-width: 768px) {
+  #intro-contact h1 {
+    top: -64px;
+  }
+}
+@media (min-width: 992px) {
+  #intro-contact h1 {
+    top: -100px;
+    padding-bottom: 0;
+  }
 }
 
 #intro {
@@ -246,6 +258,10 @@ p {
 
 .background-white {
   background: white;
+}
+
+.wpb_single_image {
+  margin-bottom: 0;
 }
 
 .split-section {
