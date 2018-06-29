@@ -261,7 +261,7 @@ p {
 }
 
 .wpb_single_image {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .split-section {
