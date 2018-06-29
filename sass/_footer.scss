@@ -9,9 +9,16 @@
 /* Footer */
 #footer.standard {
   background-color: $dark-grey;
-  padding: 60px 0 70px !important;
   position: relative;
   margin-top: 40px !important;
+
+  &:not(.centered){
+    padding: 60px 15px 70px !important;
+
+    @media (min-width: $small){
+      padding: 60px 25px 70px !important;
+    }
+  }
 }
 
 .footer-block {

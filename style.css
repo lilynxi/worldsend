@@ -519,9 +519,16 @@ p {
 /* Footer */
 #footer.standard {
   background-color: #111;
-  padding: 60px 0 70px !important;
   position: relative;
   margin-top: 40px !important;
+}
+#footer.standard:not(.centered) {
+  padding: 60px 15px 70px !important;
+}
+@media (min-width: 768px) {
+  #footer.standard:not(.centered) {
+    padding: 60px 25px 70px !important;
+  }
 }
 
 .footer-block {
