@@ -31,8 +31,8 @@
 	<div class="vc_container flex-container footer-content">
 		<div class="footer-block">
 			<h4>Termin & Beratung</h4>
-			<p>Whatsapp oder Telefon an<br>+41 79 876 33 46</p>
-			<p>oder E-Mail an<br>info@worldsend.ch</p>
+			<p>Kontaktiere uns telefonisch, per Whatsapp oder Mail.</p>
+			<p>Telefon: +41 44 450 64 00<br>Whatsapp: +41 79 900 04 04<br>E-Mail: worldsend@worldsend.ch</p>
 		</div>
 		<div class="footer-block">
 			<h4>Öffnungszeiten</h4>

@@ -534,6 +534,7 @@ p {
 @media (min-width: 768px) {
   .footer-block {
     border-right: thin solid rgba(255, 255, 255, 0.1);
+    padding-right: 20px;
   }
   .footer-block:nth-child(2), .footer-block:nth-child(3) {
     padding-left: 30px;
