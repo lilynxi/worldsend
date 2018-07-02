@@ -18,7 +18,7 @@
 
 #logo {
   position: absolute;
-  top: -30px;
+  top: -20px;
 
   img {
     max-width: 160px !important;
@@ -29,7 +29,7 @@
   }
 
   @media (min-width:$small){
-    top: -10px;
+    top: -8px;
   }
 }
 
@@ -57,12 +57,14 @@
 
 /* Flyout */
 @media (max-width:$small){
-  #main-menu.display-menu {
-    height: 100vh !important;
-    top: -60px;
+  #main-menu {
     display: flex !important;
     align-items: center;
     justify-content: center;
+  }
+  #main-menu.display-menu {
+    height: 100vh !important;
+    top: -70px;
   }
 
   #menu-main-menu {
@@ -71,14 +73,26 @@
       border: none !important;
       padding-left: 0;
       a {
-        padding-left: 0;
+        padding-left: 0 !important;
         text-align: center !important;
+        &:after {
+          content: none !important;
+        }
+      }
+      &:nth-child(3) > a:hover {
+        cursor: default;
       }
     }
     .sub-menu {
+      display: block !important;
+
       li {
         a {
           font-size: 15px !important;
+          padding: 12px 0 !important;
+          &:hover {
+            background-color: transparent !important;
+          }
         }
       }
     }

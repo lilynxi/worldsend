@@ -58,6 +58,15 @@ p {
   height: 0;
 }
 
+@media (max-width: 768px) {
+  html.locked,
+  html.locked body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 .vc_row[data-vc-full-width] {
   overflow: visible !important;
 }
@@ -258,10 +267,6 @@ p {
 
 .background-white {
   background: white;
-}
-
-.wpb_single_image {
-  margin-bottom: 0 !important;
 }
 
 .split-section {
@@ -466,7 +471,7 @@ p {
 
 #logo {
   position: absolute;
-  top: -30px;
+  top: -20px;
 }
 #logo img {
   max-width: 160px !important;
@@ -478,7 +483,7 @@ p {
 }
 @media (min-width: 768px) {
   #logo {
-    top: -10px;
+    top: -8px;
   }
 }
 
@@ -504,12 +509,15 @@ p {
 
 /* Flyout */
 @media (max-width: 768px) {
-  #main-menu.display-menu {
-    height: 100vh !important;
-    top: -60px;
+  #main-menu {
     display: flex !important;
     align-items: center;
     justify-content: center;
+  }
+
+  #main-menu.display-menu {
+    height: 100vh !important;
+    top: -70px;
   }
 
   #menu-main-menu {
@@ -520,11 +528,24 @@ p {
     padding-left: 0;
   }
   #menu-main-menu li a {
-    padding-left: 0;
+    padding-left: 0 !important;
     text-align: center !important;
+  }
+  #menu-main-menu li a:after {
+    content: none !important;
+  }
+  #menu-main-menu li:nth-child(3) > a:hover {
+    cursor: default;
+  }
+  #menu-main-menu .sub-menu {
+    display: block !important;
   }
   #menu-main-menu .sub-menu li a {
     font-size: 15px !important;
+    padding: 12px 0 !important;
+  }
+  #menu-main-menu .sub-menu li a:hover {
+    background-color: transparent !important;
   }
 
   #header.standard .header-wrapper #main-menu > ul > li > a {

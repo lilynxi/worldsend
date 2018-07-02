@@ -6,6 +6,15 @@
   height: 0;
 }
 
+html.locked,
+html.locked body {
+  @media (max-width:$small){
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
