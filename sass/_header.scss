@@ -88,7 +88,7 @@
 
       li {
         a {
-          font-size: 15px !important;
+          font-size: 14px !important;
           padding: 12px 0 !important;
           &:hover {
             background-color: transparent !important;
@@ -99,6 +99,13 @@
   }
   #header.standard .header-wrapper #main-menu>ul>li>a {
     text-align: center !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
+  }
+}
+
+/* Sub-Menu Desktop */
+.sub-menu {
+  li {
+    border: none !important;
   }
 }

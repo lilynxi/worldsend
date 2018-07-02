@@ -541,7 +541,7 @@ p {
     display: block !important;
   }
   #menu-main-menu .sub-menu li a {
-    font-size: 15px !important;
+    font-size: 14px !important;
     padding: 12px 0 !important;
   }
   #menu-main-menu .sub-menu li a:hover {
@@ -550,9 +550,14 @@ p {
 
   #header.standard .header-wrapper #main-menu > ul > li > a {
     text-align: center !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
+/* Sub-Menu Desktop */
+.sub-menu li {
+  border: none !important;
+}
+
 /* Footer */
 #footer.standard {
   background-color: #111;
