@@ -99,8 +99,11 @@ p {
   left: 0;
   transform-origin: top left;
   transform: rotate(-90deg) translate(-100%, -50%);
-  top: 14px;
+  top: -10px;
   display: none;
+}
+.section-title.left.home {
+  top: 14px;
 }
 .section-title.right {
   color: #8E8E8E;
@@ -220,6 +223,7 @@ p {
 #intro-contact {
   background: #111;
   padding: 0px 0 50px;
+  margin-bottom: -30px;
 }
 #intro-contact h1 {
   padding-left: 0;

@@ -15,8 +15,13 @@
     left: 0;
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%,-50%);
-    top: 14px;
+    //top: 14px;
+    top: -10px;
     display: none;
+
+    &.home {
+      top: 14px;
+    }
   }
 
   &.right {
@@ -144,6 +149,7 @@
 #intro-contact {
   background: $dark-grey;
   padding: 0px 0 50px;
+  margin-bottom: -30px;
 
   > div > div {
     @extend .narrow-container;
