@@ -1,14 +1,8 @@
 
 @import 'variables';
 
-/* Button */
-// .cta-home button {
-//   border-color: $white !important;
-//   color: $white !important;
-//   background: transparent !important;
-// }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
   font-weight: normal;
@@ -44,61 +38,114 @@ p {
   line-height: 1.6;
 }
 
-// #description {
-//   color: $white;
-
-//   h1 {
-//     color: $white;
-
-//     @media(min-width: $small){
-//       font-size: 36px;
-//     }
-//     @media(min-width: $medium){
-//       font-size: 42px;
-//     }   
-//   }
-// }
-
-// #prefooter h4 {
-//   font-size: 38px;
-
-//   @media (min-width: $small){
-//     font-size: 45px;
-//   }
-
-//   @media (min-width: $medium){
-//     font-size: 60px;
-//   }
-// }
 
 
+/* Page Title */
+.title-font {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: $white;
+  letter-spacing: 5px;
+  margin: 0 auto -40px;
+
+  @media (min-width: $extra-small){
+    font-size: 80px;
+    margin-bottom: -50px;
+  }
+  @media (min-width: $small){
+    font-size: 100px;
+    margin-bottom: -60px;
+  }
+  @media (min-width: $medium){
+    font-size: 120px;
+  }
+
+  @media (min-width: $large){
+    padding-left: 75px;
+    font-size: 130px;
+    margin-bottom: -70px;
+  }
+}
+
+#hero-image h1 {
+  @extend .title-font;
+}
+
+#intro-contact h1 {
+  @extend .title-font;
+  padding-left: 0;
+  top: -52px;
+  padding-bottom: 30px;
+  z-index: 3;
+  position: relative;
+
+  @media (min-width: $small){
+    top: -64px;
+  }
+  @media (min-width: $medium){
+    top: -100px;
+    padding-bottom: 0;
+  }
+}
 
 
-// Home --> delete these styles later
-// #welcome h1,
-// #welcome h2,
-// #welcome p {
-//   color: $white;
-// }
+/* Large Links */
+.large-links {
+  font-size: 60px;
+  font-family: $headline-font;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-block;
+  text-decoration: none;
 
-// #welcome h1 {
-//   @media(min-width: $small){
-//     font-size: 36px;
-//   }
-//   @media(min-width: $medium){
-//     font-size: 42px;
-//   }
-// }
+  @media (min-width: $extra-small){
+    font-size: 60px;
+  }
+  @media (min-width: $small){
+    font-size: 70px;
+  }
+  @media (min-width: $medium){
+    font-size: 90px;
+  }
+  @media (min-width: $large){
+    font-size: 95px;
+  }
+}
 
-// #welcome h2 {
-//   @media(min-width: $small){
-//     font-size: 30px;
-//   }
-//   @media(min-width: $medium){
-//     font-size: 36px;
-//   }
-// }
+#artists-links a,
+#contact-text a  {
+  @extend .large-links;
+  border-bottom: 2px solid $dark-grey;
 
-// #welcome p {
-//   padding-top: 10px;
-// }
+  &:hover {
+    border-color: $white;
+    color: $dark-grey;
+  }
+}
+
+#intro-link a {
+  @extend .large-links;
+  color: $white;
+  border-bottom: 2px solid $white;
+
+  &:hover {
+    border-color: $dark-grey;
+  }
+}
+
+#contact-text a {
+  margin-bottom: 20px;
+  font-size: 46px;
+
+  @media (min-width: $small){
+    font-size: 54px;
+  }
+  @media (min-width: $medium){
+    font-size: 62px;
+  }
+  @media (min-width: $large){
+    font-size: 70px;
+  }
+}
+
+

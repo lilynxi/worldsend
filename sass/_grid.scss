@@ -1,6 +1,7 @@
 
 @import 'variables';
 
+/* Global Styles */
 .home #main-wrapper .vc_container:nth-child(2),
 .home #main-wrapper .vc_container:nth-child(4) {
   height: 0;
@@ -15,11 +16,11 @@ html.locked body {
   }
 }
 
-
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
 }
 
+/* Narrow Container */
 .narrow-container {
   max-width: $narrow-container;
   margin: 0 auto;
