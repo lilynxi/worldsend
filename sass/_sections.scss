@@ -119,7 +119,7 @@
 
 /* Intro – Normal & Contact */
 #intro {
-  background: linear-gradient(to top, $white 0, $white 44%, $dark-grey 44% );
+  background: linear-gradient(to top, $lightest-grey 0, $lightest-grey 44%, $dark-grey 44% );
   padding: 90px 0 410px;
   margin-bottom: -370px;
 
@@ -206,6 +206,7 @@
 #artists-links {
   z-index: 1;
   margin-top: 40px;
+  z-index: 2;
   @media (min-width: $small){
     margin-top: 40px;
   }
@@ -237,7 +238,7 @@
 
 // background white
 .background-white {
-  background: white;
+  background: $lightest-grey;
 }
 
 // carousel
@@ -250,7 +251,7 @@
 
   .owl-prev,
   .owl-next {
-    background: $white;
+    background: $lightest-grey;
     color: $dark-grey;
   }
 }

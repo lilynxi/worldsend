@@ -16,6 +16,10 @@ html.locked body {
   }
 }
 
+body {
+  background: $lightest-grey;
+}
+
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
 }
