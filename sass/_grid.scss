@@ -20,6 +20,12 @@ body {
   background: $lightest-grey;
 }
 
+// center & overflow fix
+div#main-wrapper.vc_container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
 }
