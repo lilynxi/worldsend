@@ -30,7 +30,9 @@ p {
   }
 }
 
-#footer a {
+#footer a,
+#intro a,
+#intro-contact a {
   color: $white;
 }
 
