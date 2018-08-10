@@ -120,8 +120,12 @@
 /* Intro – Normal & Contact */
 #intro {
   background: linear-gradient(to top, $lightest-grey 0, $lightest-grey 44%, $dark-grey 44% );
-  padding: 90px 0 410px;
   margin-bottom: -370px;
+  padding: 60px 0 380px;
+
+  @media (min-width: $small){
+    padding: 90px 0 410px;
+  }
 
   > div > div {
     @extend .narrow-container;

@@ -408,8 +408,13 @@ div#main-wrapper.vc_container {
 /* Intro – Normal & Contact */
 #intro {
   background: linear-gradient(to top, #f1f4f5 0, #f1f4f5 44%, #111 44%);
-  padding: 90px 0 410px;
   margin-bottom: -370px;
+  padding: 60px 0 380px;
+}
+@media (min-width: 768px) {
+  #intro {
+    padding: 90px 0 410px;
+  }
 }
 @media (min-width: 768px) {
   #intro.two-column-text > div:first-child {
