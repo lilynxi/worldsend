@@ -188,3 +188,31 @@ p {
     }
   }
 }
+
+
+/* Buttons Artists */
+
+#intro .vc_btn3-container {
+  display: block;
+  margin-bottom: 15px;
+
+  @media (min-width: $extra-small){
+    display: inline-block;
+    margin-right: 4px;
+  }
+}
+
+#intro button {
+  border-color: $light-grey;
+  color: $light-grey;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 30px;
+
+  &:hover {
+    border-color: $white;
+    color: $white;
+    background: transparent;
+  }
+}

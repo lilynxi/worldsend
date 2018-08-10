@@ -233,6 +233,32 @@ p {
   }
 }
 
+/* Buttons Artists */
+#intro .vc_btn3-container {
+  display: block;
+  margin-bottom: 15px;
+}
+@media (min-width: 480px) {
+  #intro .vc_btn3-container {
+    display: inline-block;
+    margin-right: 4px;
+  }
+}
+
+#intro button {
+  border-color: #8E8E8E;
+  color: #8E8E8E;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+#intro button:hover {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
 /* Global Styles */
 .home #main-wrapper .vc_container:nth-child(2),
 .home #main-wrapper .vc_container:nth-child(4) {
