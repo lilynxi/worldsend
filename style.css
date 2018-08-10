@@ -245,7 +245,7 @@ p {
   }
 }
 
-#intro button {
+#intro .vc_btn3 {
   border-color: #8E8E8E;
   color: #8E8E8E;
   display: block;
@@ -253,7 +253,7 @@ p {
   font-size: 16px;
   padding: 10px 30px;
 }
-#intro button:hover {
+#intro .vc_btn3:hover {
   border-color: #fff;
   color: #fff;
   background: transparent;
