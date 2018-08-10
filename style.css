@@ -155,7 +155,7 @@ p {
 #intro-link a {
   color: #fff;
   border-bottom: 2px solid #fff;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 #intro-link a:hover {
   border-color: #111;
