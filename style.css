@@ -596,6 +596,14 @@ div#main-wrapper.vc_container {
   }
 }
 
+/* Header Woocommerce */
+.woocommerce-page #header,
+.page-id-3 #header {
+  position: static;
+  background: #111;
+  margin-bottom: 50px !important;
+}
+
 /* Menu Mobile */
 #menu-trigger {
   top: 40% !important;
@@ -626,7 +634,7 @@ div#main-wrapper.vc_container {
 
   #main-menu.display-menu {
     height: 100vh !important;
-    top: -50px;
+    top: -60px;
   }
 
   #menu-main-menu {
@@ -639,6 +647,7 @@ div#main-wrapper.vc_container {
   #menu-main-menu li a {
     padding-left: 0 !important;
     text-align: center !important;
+    line-height: 46px !important;
   }
   #menu-main-menu li a:after {
     content: none !important;
@@ -651,7 +660,8 @@ div#main-wrapper.vc_container {
   }
   #menu-main-menu .sub-menu li a {
     font-size: 14px !important;
-    padding: 12px 0 !important;
+    padding: 0px 0 12px !important;
+    line-height: 24px !important;
   }
   #menu-main-menu .sub-menu li a:hover {
     background-color: transparent !important;

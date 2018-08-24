@@ -33,6 +33,15 @@
   }
 }
 
+/* Header Woocommerce */
+.woocommerce-page,
+.page-id-3 { // set coorect class for privacy policy page!!
+  #header {
+    position: static;
+    background: $dark-grey;
+    margin-bottom: 50px !important;
+  }
+}
 
 /* Menu Mobile */
 #menu-trigger {
@@ -64,7 +73,7 @@
   }
   #main-menu.display-menu {
     height: 100vh !important;
-    top: -50px;
+    top: -60px;
   }
 
   #menu-main-menu {
@@ -75,6 +84,7 @@
       a {
         padding-left: 0 !important;
         text-align: center !important;
+        line-height: 46px !important;
         &:after {
           content: none !important;
         }
@@ -89,7 +99,8 @@
       li {
         a {
           font-size: 14px !important;
-          padding: 12px 0 !important;
+          padding: 0px 0 12px !important;
+          line-height: 24px !important;
           &:hover {
             background-color: transparent !important;
           }
