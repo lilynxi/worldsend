@@ -65,6 +65,9 @@ jQuery(document).ready(function(){
 	jQuery('.woocommerce-cart-form__cart-item .product-thumbnail a').on('click',function(e){
 		e.preventDefault();
 	});
+	jQuery('.woocommerce-table__product-name a').on('click',function(e){
+		e.preventDefault();
+	});
 });
 
 </script>
