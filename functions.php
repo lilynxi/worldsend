@@ -13,4 +13,9 @@ function kraft_child_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'kraft_child_enqueue_styles' );
 
+// woocommerce remove detail pages
+remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+
 ?>

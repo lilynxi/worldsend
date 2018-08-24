@@ -563,6 +563,12 @@ div#main-wrapper.vc_container {
   color: #111;
 }
 
+.woocommerce-order-overview {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
 /* Header Home */
 #header {
   position: absolute;
@@ -651,9 +657,6 @@ div#main-wrapper.vc_container {
   }
   #menu-main-menu li a:after {
     content: none !important;
-  }
-  #menu-main-menu li:nth-child(3) > a:hover {
-    cursor: default;
   }
   #menu-main-menu .sub-menu {
     display: block !important;
