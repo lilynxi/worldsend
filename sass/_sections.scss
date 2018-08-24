@@ -267,3 +267,15 @@
   padding-left: 10px;
   padding-top: 10px;
 }
+
+a.woocommerce-loop-product__link:hover,
+.woocommerce-cart-form__cart-item .product-name a:hover {
+  cursor: default;
+  color: $dark-grey;
+}
+
+.woocommerce-cart-form__cart-item .product-name a {
+  text-decoration: none;
+}
+
+ 
