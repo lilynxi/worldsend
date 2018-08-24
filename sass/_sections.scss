@@ -268,8 +268,10 @@
   padding-top: 10px;
 }
 
+// prevent detail page
 a.woocommerce-loop-product__link:hover,
-.woocommerce-cart-form__cart-item .product-name a:hover {
+.woocommerce-cart-form__cart-item .product-name a:hover,
+.woocommerce-cart-form__cart-item .product-thumbnail a:hover {
   cursor: default;
   color: $dark-grey;
 }
@@ -278,4 +280,3 @@ a.woocommerce-loop-product__link:hover,
   text-decoration: none;
 }
 
- 

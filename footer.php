@@ -62,6 +62,9 @@ jQuery(document).ready(function(){
 	jQuery('.woocommerce-cart-form__cart-item .product-name a').on('click',function(e){
 		e.preventDefault();
 	});
+	jQuery('.woocommerce-cart-form__cart-item .product-thumbnail a').on('click',function(e){
+		e.preventDefault();
+	});
 });
 
 </script>

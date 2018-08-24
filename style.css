@@ -570,7 +570,8 @@ div#main-wrapper.vc_container {
 }
 
 a.woocommerce-loop-product__link:hover,
-.woocommerce-cart-form__cart-item .product-name a:hover {
+.woocommerce-cart-form__cart-item .product-name a:hover,
+.woocommerce-cart-form__cart-item .product-thumbnail a:hover {
   cursor: default;
   color: #111;
 }
