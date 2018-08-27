@@ -26,6 +26,12 @@ div#main-wrapper.vc_container {
   padding-right: 0;
 }
 
+// add padding for woocommerce pages
+div#main-wrapper.vc_container > .woocommerce {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .vc_row[data-vc-full-width]{
   overflow: visible !important;
 }

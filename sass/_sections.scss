@@ -268,7 +268,7 @@
   padding-top: 10px;
 }
 
-// prevent detail page
+// prevent detail page link
 a.woocommerce-loop-product__link:hover,
 .woocommerce-cart-form__cart-item .product-name a:hover,
 .woocommerce-cart-form__cart-item .product-thumbnail a:hover,
@@ -282,3 +282,24 @@ a.woocommerce-loop-product__link:hover,
   text-decoration: none;
 }
 
+// Price tags
+.woocommerce ul.products li.product .price {
+  color: $red;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+// checkout button
+.woocommerce a.button.alt,
+.woocommerce button.button.alt {
+  background-color: $red;
+
+  &:hover {
+    background-color: darken($red, 4%);
+  }
+}
+
+// added to cart link
+.woocommerce ul.products li.product a.added_to_cart {
+  text-decoration: underline;
+}
