@@ -303,3 +303,8 @@ a.woocommerce-loop-product__link:hover,
 .woocommerce ul.products li.product a.added_to_cart {
   text-decoration: underline;
 }
+
+// Dropdown Shop-Page
+.woocommerce .woocommerce-ordering {
+  display: none !important;
+}

@@ -84,7 +84,7 @@
       a {
         padding-left: 0 !important;
         text-align: center !important;
-        line-height: 46px !important;
+        line-height: 42px !important;
         &:after {
           content: none !important;
         }
@@ -96,8 +96,8 @@
       li {
         a {
           font-size: 14px !important;
-          padding: 0px 0 12px !important;
-          line-height: 24px !important;
+          padding: 0px 0 10px !important;
+          line-height: 22px !important;
           &:hover {
             background-color: transparent !important;
           }
@@ -105,10 +105,25 @@
       }
     }
   }
-  #header.standard .header-wrapper #main-menu>ul>li>a {
+  #header.standard .header-wrapper #main-menu > ul > li > a {
     text-align: center !important;
     font-size: 18px !important;
   }
+}
+
+// Menu Desktop - make dropdowns more accessible
+#header.standard .header-wrapper #main-menu > ul > li {
+  margin-left: 0;
+
+  @media (min-width: $small){
+    & > a {
+      padding: 0 15px 17px;
+    }
+    & > .level-two {
+      top: 35px;
+    }
+  }
+
 }
 
 /* Sub-Menu Desktop */
