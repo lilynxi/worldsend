@@ -35,7 +35,8 @@
 
 /* Header Woocommerce */
 .woocommerce-page,
-.page-id-3 { // set coorect class for privacy policy page!!
+.page-id-3, // datenschutzerklärung lokal
+.page-id-176 { // datenschutzerklärung live
   #header {
     position: static;
     background: $dark-grey;

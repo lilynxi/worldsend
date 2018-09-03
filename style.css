@@ -610,6 +610,10 @@ a.woocommerce-loop-product__link:hover,
   display: none !important;
 }
 
+.woocommerce-page .post-meta {
+  display: none;
+}
+
 /* Header Home */
 #header {
   position: absolute;
@@ -645,7 +649,8 @@ a.woocommerce-loop-product__link:hover,
 
 /* Header Woocommerce */
 .woocommerce-page #header,
-.page-id-3 #header {
+.page-id-3 #header,
+.page-id-176 #header {
   position: static;
   background: #111;
   margin-bottom: 50px !important;

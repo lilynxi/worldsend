@@ -260,7 +260,7 @@
   }
 }
 
-
+// SHOP ------------------------
 // woocommerce
 .woocommerce-order-overview {
   background-color: $white;
@@ -307,4 +307,9 @@ a.woocommerce-loop-product__link:hover,
 // Dropdown Shop-Page
 .woocommerce .woocommerce-ordering {
   display: none !important;
+}
+
+// Hide Detailpage Metainfo
+.woocommerce-page .post-meta {
+  display: none;
 }
