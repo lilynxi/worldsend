@@ -56,18 +56,18 @@ jQuery(document).ready(function(){
 	jQuery('#menu-trigger').on('click',function(e){
     jQuery('html').toggleClass('locked');
 	});
-	jQuery('.woocommerce-loop-product__link').on('click',function(e){
-		e.preventDefault();
-	});
-	jQuery('.woocommerce-cart-form__cart-item .product-name a').on('click',function(e){
-		e.preventDefault();
-	});
-	jQuery('.woocommerce-cart-form__cart-item .product-thumbnail a').on('click',function(e){
-		e.preventDefault();
-	});
-	jQuery('.woocommerce-table__product-name a').on('click',function(e){
-		e.preventDefault();
-	});
+	// jQuery('.woocommerce-loop-product__link').on('click',function(e){
+	// 	e.preventDefault();
+	// });
+	// jQuery('.woocommerce-cart-form__cart-item .product-name a').on('click',function(e){
+	// 	e.preventDefault();
+	// });
+	// jQuery('.woocommerce-cart-form__cart-item .product-thumbnail a').on('click',function(e){
+	// 	e.preventDefault();
+	// });
+	// jQuery('.woocommerce-table__product-name a').on('click',function(e){
+	// 	e.preventDefault();
+	// });
 });
 
 </script>
