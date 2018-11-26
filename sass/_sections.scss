@@ -324,7 +324,7 @@ a.woocommerce-loop-product__link:hover,
 .woocommerce-page .woocommerce-variation-price,
 .woocommerce-page .related.products,
 .woocommerce-page .reset_variations {
-  display: none;
+  display: none !important;
 }
 
 // container

@@ -610,7 +610,7 @@ div#main-wrapper.vc_container > .woocommerce {
 .woocommerce-page .woocommerce-variation-price,
 .woocommerce-page .related.products,
 .woocommerce-page .reset_variations {
-  display: none;
+  display: none !important;
 }
 
 .woocommerce-page .post-single-wrap .vc_col-md-9 {
