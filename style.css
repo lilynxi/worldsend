@@ -606,7 +606,10 @@ div#main-wrapper.vc_container > .woocommerce {
 .woocommerce-page .post-img,
 .woocommerce-page .product_meta,
 .woocommerce-page .post-share,
-.woocommerce-page .woocommerce-tabs {
+.woocommerce-page .woocommerce-tabs,
+.woocommerce-page .woocommerce-variation-price,
+.woocommerce-page .related.products,
+.woocommerce-page .reset_variations {
   display: none;
 }
 
