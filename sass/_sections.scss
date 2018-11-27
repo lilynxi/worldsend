@@ -309,7 +309,12 @@ a.woocommerce-loop-product__link:hover,
   display: none !important;
 }
 
-// WOOCOMMERCE DETAILPAGE
+// Title Overview
+.woocommerce-loop-product__title {
+  font-size: 18px !important;
+}
+
+//----------- WOOCOMMERCE DETAILPAGE
 
 // Hide Detailpage Metainfo
 // Hide Detailpage Single Image
@@ -341,6 +346,24 @@ a.woocommerce-loop-product__link:hover,
   @media (min-width: $medium){
     width: 49%;
   }
+}
+
+// price detail page
+.woocommerce-page .post-single-wrap .price {
+  font-weight: 700 !important;
+}
+
+// text detail page
+.woocommerce-page .post-single-wrap .woocommerce-product-details__short-description p,
+.woocommerce-page .post-single-wrap .woocommerce-variation.single_variation p{
+  color: $dark-grey;
+}
+
+// label and select detail page
+.woocommerce-page .post-single-wrap .variations .label,
+.woocommerce-page .post-single-wrap .variations select {
+  color: $dark-grey;
+  font-size: 16px;
 }
 
 // image gallery
